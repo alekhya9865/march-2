@@ -1,0 +1,20 @@
+a=[]
+m=int(input("enter number of rows:"))
+n=int(input("ENter number of columns:"))
+firstmatrix_a=[[int(input()) for i in range(n)] for i in range(m)]
+for u in firstmatrix_a:
+    print(firstmatrix_a)
+b=[]
+m=int(input("enter number of rows:"))
+n=int(input("ENter number of columns:"))
+secondmatrix_b=[[int(input()) for i in range(n)] for i in range(m)]
+for u in secondmatrix_b:
+    print(secondmatrix_b)
+result=[[0 for i in range(n)] for i in range(m)]
+for i in range(len(firstmatrix_a)):
+    for j in range(len(secondmatrix_b[0])):
+        for k in range(len(secondmatrix_b)):
+            result [i][j]+=firstmatrix_a[i][k]*secondmatrix_b[k][j]
+print("\nfistMatrix_a X secondMatrix_b is: ")
+for r in result:
+    print(r)
